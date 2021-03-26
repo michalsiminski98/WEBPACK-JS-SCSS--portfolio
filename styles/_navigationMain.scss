@@ -38,6 +38,7 @@
     color: $mainColor;
     background-color: transparent;
     border: 1px solid $mainColor;
+    cursor: pointer;
   }
   &__rectangle {
     width: 100vw;
@@ -48,6 +49,7 @@
   }
   &__profilePicture {
     width: calc(100% - 24px);
+    max-width: 400px;
     height: 330px;
     position: absolute;
     left: 24px;
@@ -73,7 +75,7 @@
     }
   }
 }
-@media (min-height: 768px) {
+@media (min-width: 768px) {
   .home {
     &__textWrapper {
       width: 400px;
@@ -104,7 +106,7 @@
     }
   }
 }
-@media (min-height: 1024px) {
+@media (min-width: 1024px) {
   .home {
     &__textWrapper {
       width: 550px;
@@ -130,6 +132,81 @@
       height: 200px;
       left: 40%;
       bottom: 30px;
+    }
+  }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+  .home {
+    &__textWrapper {
+      width: 450px;
+      margin: 320px 80px 0 auto;
+    }
+    &__text {
+      font-size: 3.7rem;
+    }
+    &__button {
+      width: 180px;
+      height: 50px;
+      font-size: 2.2rem;
+    }
+    &__rectangle {
+      height: 250px;
+    }
+    &__profilePicture {
+      height: 580px;
+    }
+    &__wave {
+      background-size: 900px 180px;
+      left: 30%;
+    }
+  }
+}
+@media (min-width: 1220px) {
+  .home {
+    &__wave {
+      background-size: 1200px 190px;
+      left: 25%;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .home {
+    &__profilePicture {
+      left: 20%;
+      height: 650px;
+    }
+    &__wave {
+      background-size: 1400px 190px;
+      left: 30%;
+    }
+  }
+}
+@media (min-width: 1670px) {
+  .home {
+    &__profilePicture {
+      left: 25%;
+      height: 670px;
+    }
+    &__wave {
+      background-size: 1400px 190px;
+      left: 30%;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .home {
+    &__textWrapper {
+      width: 450px;
+      margin: 280px 240px 0 auto;
+    }
+    &__profilePicture {
+      left: 25%;
+      height: 670px;
+    }
+    &__wave {
+      background-size: 1400px 200px;
+      bottom: 100px;
+      left: 30%;
     }
   }
 }
