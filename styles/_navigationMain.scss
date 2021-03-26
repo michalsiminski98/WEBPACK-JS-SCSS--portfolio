@@ -1,0 +1,135 @@
+.navigation {
+  width: 100vw;
+  height: 80px;
+  position: sticky;
+  background-color: $secondaryBackground;
+  &__menuText {
+    margin-right: 24px;
+    line-height: 80px;
+    float: right;
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: $mainColor;
+  }
+}
+.home {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  &__textWrapper {
+    width: 75vw;
+    height: 150px;
+    margin: 48px 24px 0 auto;
+  }
+  &__text {
+    font-size: 2.3rem;
+    text-align: right;
+  }
+  &__textDistinction {
+    color: $mainColor;
+    font-weight: 700;
+  }
+  &__button {
+    width: 120px;
+    height: 40px;
+    margin-top: 16px;
+    float: right;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $mainColor;
+    background-color: transparent;
+    border: 1px solid $mainColor;
+  }
+  &__rectangle {
+    width: 100vw;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    background-color: $mainColor;
+  }
+  &__profilePicture {
+    width: calc(100% - 24px);
+    height: 330px;
+    position: absolute;
+    left: 24px;
+    bottom: 0;
+    background-image: url(../assets/person.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__wave {
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    background-image: url(../assets/wave.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-height: 620px) {
+  .home {
+    &__textWrapper {
+      margin: 112px 24px 0 auto;
+    }
+  }
+}
+@media (min-height: 768px) {
+  .home {
+    &__textWrapper {
+      width: 400px;
+    }
+    &__text {
+      font-size: 3.3rem;
+      text-align: right;
+    }
+    &__button {
+      width: 140px;
+      height: 50px;
+      margin-top: 16px;
+      font-size: 1.8rem;
+    }
+    &__rectangle {
+      width: 65vw;
+      height: 200px;
+    }
+    &__profilePicture {
+      left: 64px;
+      height: 580px;
+      z-index: 100;
+    }
+    &__wave {
+      height: 180px;
+      left: 30%;
+      bottom: 10px;
+    }
+  }
+}
+@media (min-height: 1024px) {
+  .home {
+    &__textWrapper {
+      width: 550px;
+      height: 250px;
+      margin: 240px 24px 0 auto;
+    }
+    &__text {
+      font-size: 4.7rem;
+    }
+    &__button {
+      width: 180px;
+      height: 60px;
+      font-size: 2.4rem;
+    }
+    &__rectangle {
+      height: 250px;
+    }
+    &__profilePicture {
+      left: 128px;
+      height: 680px;
+    }
+    &__wave {
+      height: 200px;
+      left: 40%;
+      bottom: 30px;
+    }
+  }
+}
