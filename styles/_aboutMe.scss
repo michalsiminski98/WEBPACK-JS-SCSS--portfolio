@@ -1,0 +1,139 @@
+.aboutMe {
+  position: absolute;
+  top: 100%;
+  width: 100vw;
+  min-height: 600px;
+  background-color: $secondaryBackground;
+  &__sectionTitle {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: $mainColor;
+  }
+  &__wrapper {
+    width: calc(100% - 48px);
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  &__photo {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100% 201px;
+    margin: 8px 0;
+  }
+  &__photo-first {
+    background-image: url(../assets/aboutmefirst.jpg);
+  }
+  &__photo-second {
+    background-image: url(../assets/aboutmesecond.jpg);
+  }
+  &__photo-third {
+    background-image: url(../assets/aboutmethird.jpg);
+  }
+  &__textWrapper {
+    width: 100%;
+    margin: 8px 0;
+    -webkit-box-shadow: 0px 0px 15px -5px #000000;
+    box-shadow: 0px 0px 15px -5px #000000;
+  }
+  &__textTitle {
+    font-size: 1.8rem;
+    color: $mainColor;
+    margin: 16px 0 0 16px;
+  }
+  &__text {
+    margin: 24px 16px;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .aboutMe {
+    &__sectionTitle {
+      margin: 24px 40px;
+      text-align: left;
+      font-size: 2.5rem;
+    }
+    &__wrapper {
+      display: block;
+    }
+    &__photo {
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: 50% 251px;
+    }
+    &__photo-first {
+      background-image: url(../assets/aboutmefirst.jpg);
+      transform: translate(-55%, 35%) rotate(10deg) scaleX(-1);
+    }
+    &__photo-second {
+      transform: translate(50%, -105%);
+      background-image: url(../assets/aboutmesecond.jpg);
+    }
+    &__photo-third {
+      background-image: url(../assets/aboutmethird.jpg);
+    }
+    &__textWrapper {
+      position: absolute;
+      width: 60%;
+      margin: 0;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+      background-color: $secondaryBackground;
+      z-index: 300;
+    }
+    &__textTitle {
+      font-size: 1.8rem;
+      color: $mainColor;
+      margin: 16px 0 0 16px;
+    }
+    &__text {
+      margin: 24px 16px;
+      font-size: 1.3rem;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .aboutMe {
+    &__photo {
+      height: 350px;
+      background-repeat: no-repeat;
+      background-size: 40% 351px;
+    }
+    &__textWrapper {
+      width: 45%;
+      margin: 0;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+      background-color: $secondaryBackground;
+      z-index: 300;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .aboutMe {
+    &__photo {
+      height: 450px;
+      background-repeat: no-repeat;
+      background-size: 40% 451px;
+    }
+    &__textWrapper {
+      width: 30%;
+      margin: 0;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+      background-color: $secondaryBackground;
+      z-index: 300;
+    }
+    &__photo-third {
+      transform: translate(50%, -40%);
+      background-image: url(../assets/aboutmethird.jpg);
+    }
+  }
+}
