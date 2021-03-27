@@ -1,7 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  color: $fontColorBlack;
   font-family: "Open Sans";
+}
+b {
+  color: $mainColor;
 }
 html {
   font-size: 62.5%;
