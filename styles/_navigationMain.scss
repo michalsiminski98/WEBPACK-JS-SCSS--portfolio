@@ -1,7 +1,7 @@
 .navigation {
   width: 100vw;
   height: 80px;
-  position: sticky;
+  position: fixed;
   background-color: $secondaryBackground;
   &__menuText {
     margin-right: 24px;
@@ -11,6 +11,9 @@
     font-weight: 700;
     color: $mainColor;
   }
+  &__wrapper {
+    display: none;
+  }
 }
 .home {
   width: 100vw;
@@ -18,7 +21,7 @@
   &__textWrapper {
     width: 75vw;
     height: 150px;
-    margin: 48px 24px 0 auto;
+    margin: 96px 24px 0 auto;
   }
   &__text {
     font-size: 2.3rem;
@@ -49,8 +52,8 @@
   }
   &__profilePicture {
     width: calc(100% - 24px);
-    max-width: 400px;
-    height: 330px;
+    height: 270px;
+    max-width: 300px;
     position: absolute;
     left: 24px;
     bottom: 0;
@@ -66,6 +69,7 @@
     background-image: url(../assets/wave.png);
     background-size: contain;
     background-repeat: no-repeat;
+    display: none;
   }
 }
 @media (min-height: 620px) {
@@ -75,14 +79,61 @@
     }
   }
 }
+@media (min-height: 320px) and (orientation: landscape) {
+  .home {
+    &__textWrapper {
+      width: 300px;
+      margin: 96px 24px 0 auto;
+    }
+    &__profilePicture {
+      left: 104px;
+      height: 220px;
+    }
+    &__rectangle {
+      width: 55vw;
+      height: 100px;
+    }
+  }
+}
 @media (min-width: 768px) {
+  .navigation {
+    &__menuText {
+      display: none;
+    }
+    &__wrapper {
+      width: calc(100% - 240px);
+      height: 80px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.9rem;
+      list-style-type: none;
+    }
+    &__item {
+      overflow: hidden;
+      cursor: pointer;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        transform: translateX(-105%);
+        height: 1px;
+        background-color: black;
+        transition: 0.2s;
+      }
+      &:hover::after {
+        transform: translateX(0);
+      }
+    }
+  }
   .home {
     &__textWrapper {
       width: 400px;
     }
     &__text {
       font-size: 3.3rem;
-      text-align: right;
     }
     &__button {
       width: 140px;
@@ -95,14 +146,38 @@
       height: 200px;
     }
     &__profilePicture {
-      left: 64px;
       height: 580px;
+      max-width: 400px;
+      left: 64px;
       z-index: 100;
     }
     &__wave {
       height: 180px;
       left: 30%;
       bottom: 10px;
+      display: block;
+    }
+  }
+}
+
+@media (min-height: 375px) and (orientation: landscape) {
+  .home {
+    &__textWrapper {
+      width: 340px;
+    }
+    &__text {
+      font-size: 2.8rem;
+    }
+    &__wave {
+      display: none;
+    }
+    &__profilePicture {
+      left: 164px;
+      height: 260px;
+    }
+    &__rectangle {
+      width: 55vw;
+      height: 100px;
     }
   }
 }
@@ -117,9 +192,47 @@
       font-size: 4.7rem;
     }
     &__button {
+      position: relative;
       width: 180px;
       height: 60px;
       font-size: 2.4rem;
+      transition: 0.2s;
+      overflow: hidden;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 100%;
+        left: 100%;
+        width: 50%;
+        height: 60px;
+        background-color: $mainColor;
+        transition: 0.2s;
+        z-index: -1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: -125%;
+        left: -50%;
+        width: 50%;
+        height: 60px;
+        background-color: $mainColor;
+        transition: 0.2s;
+        z-index: -1;
+      }
+      &:hover::before {
+        top: 0%;
+        left: 50%;
+      }
+      &:hover::after {
+        top: 0%;
+        left: 0%;
+      }
+      &:hover {
+        color: $fontColor;
+      }
     }
     &__rectangle {
       height: 250px;
@@ -132,6 +245,7 @@
       height: 200px;
       left: 40%;
       bottom: 30px;
+      display: block;
     }
   }
 }
@@ -139,7 +253,7 @@
   .home {
     &__textWrapper {
       width: 450px;
-      margin: 320px 80px 0 auto;
+      margin: 112px 80px 0 auto;
     }
     &__text {
       font-size: 3.7rem;
@@ -170,6 +284,11 @@
   }
 }
 @media (min-width: 1440px) {
+  .navigation {
+    &__wrapper {
+      width: calc(100% - 480px);
+    }
+  }
   .home {
     &__profilePicture {
       left: 20%;
@@ -197,7 +316,7 @@
   .home {
     &__textWrapper {
       width: 450px;
-      margin: 280px 240px 0 auto;
+      margin: 160px 240px 0 auto;
     }
     &__profilePicture {
       left: 25%;
