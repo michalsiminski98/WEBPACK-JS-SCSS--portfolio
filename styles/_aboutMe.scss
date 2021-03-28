@@ -1,6 +1,4 @@
 .aboutMe {
-  position: absolute;
-  top: 100%;
   width: 100vw;
   min-height: 600px;
   background-color: $secondaryBackground;
@@ -112,6 +110,15 @@
       transform: translateX(-50%);
       background-color: $secondaryBackground;
       z-index: 300;
+    }
+    &__textTitle {
+      font-size: 2rem;
+      color: $mainColor;
+      margin: 16px 0 0 16px;
+    }
+    &__text {
+      margin: 24px 16px;
+      font-size: 1.6rem;
     }
   }
 }

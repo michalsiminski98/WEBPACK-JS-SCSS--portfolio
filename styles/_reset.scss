@@ -12,5 +12,7 @@ html {
   overflow-x: hidden;
 }
 .bodyWrapper {
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 }
