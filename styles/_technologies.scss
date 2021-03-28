@@ -1,0 +1,158 @@
+.technologies {
+  width: 100vw;
+  &__sectionTitle {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: $mainColor;
+  }
+  .swiper {
+    &__container {
+      width: 100%;
+      margin: 48px 0;
+      padding: 40px 0;
+    }
+    &__slide {
+      width: 240px;
+      height: 400px;
+    }
+    &__html {
+      background-color: #e44c264b;
+      -webkit-box-shadow: 0px 0px 15px -1px #e44d26;
+      box-shadow: 0px 0px 15px -1px #e44d26;
+    }
+    &__css {
+      background-color: #2629e457;
+      -webkit-box-shadow: 0px 0px 15px -1px #2629e4;
+      box-shadow: 0px 0px 15px -1px #2629e4;
+    }
+    &__javascript {
+      background-color: #e4d12670;
+      -webkit-box-shadow: 0px 0px 15px -1px #e4d126;
+      box-shadow: 0px 0px 15px -1px #e4d126;
+    }
+    &__react {
+      background-color: #26bee460;
+      -webkit-box-shadow: 0px 0px 15px -1px #26bee4;
+      box-shadow: 0px 0px 15px -1px #26bee4;
+    }
+    &__webpack {
+      background-color: #2643e454;
+      -webkit-box-shadow: 0px 0px 15px -1px #2643e4;
+      box-shadow: 0px 0px 15px -1px #2643e4;
+    }
+    &__git {
+      background-color: #e4822656;
+      -webkit-box-shadow: 0px 0px 15px -1px #e48226;
+      box-shadow: 0px 0px 15px -1px #e48226;
+    }
+    &__gsap {
+      background-color: #3ce42659;
+      -webkit-box-shadow: 0px 0px 15px -1px #3ce426;
+      box-shadow: 0px 0px 15px -1px #3ce426;
+    }
+    &__python {
+      background-color: #e4c12660;
+      -webkit-box-shadow: 0px 0px 15px -1px #e4c126;
+      box-shadow: 0px 0px 15px -1px #e4c126;
+    }
+    &__logo {
+      width: 50%;
+      margin-left: 50%;
+      margin-top: 24px;
+      transform: translateX(-50%);
+      height: 130px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &__htmlLogo {
+      background-image: url(../assets/html.png);
+    }
+    &__htmlLogo {
+      background-image: url(../assets/html.png);
+    }
+    &__cssLogo {
+      background-image: url(../assets/css.png);
+      transform: translateX(-40%);
+    }
+    &__javascriptLogo {
+      background-image: url(../assets/javascript.png);
+    }
+    &__reactLogo {
+      background-image: url(../assets/react.png);
+      transform: translate(-50%, 20%);
+    }
+    &__webpackLogo {
+      background-image: url(../assets/webpack.png);
+    }
+    &__gitLogo {
+      background-image: url(../assets/git.png);
+    }
+    &__gsapLogo {
+      background-image: url(../assets/gsap.png);
+      transform: translateX(-60%);
+    }
+    &__pythonLogo {
+      background-image: url(../assets/python.png);
+    }
+    &__name {
+      margin: 8px 16px;
+      font-size: 2.2rem;
+      color: $fontColor;
+    }
+    &__list {
+      margin-left: 24px;
+      font-size: 1.7rem;
+      list-style-type: circle;
+    }
+    &__listItem {
+      margin: 8px 0;
+      color: $fontColor;
+    }
+    &__lastItem {
+      color: $mainColor;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .technologies {
+    &__sectionTitle {
+      margin: 24px 40px;
+      text-align: left;
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .technologies {
+    .swiper {
+      &__slide {
+        width: 360px;
+        height: 600px;
+      }
+      &__logo {
+        width: 100%;
+        margin-left: 50%;
+        margin-top: 24px;
+        transform: translateX(-28%);
+        height: 210px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &__cssLogo {
+        transform: translateX(-21%);
+      }
+      &__reactLogo {
+        background-image: url(../assets/react.png);
+        transform: translate(-40%, 5%);
+      }
+      &__name {
+        font-size: 3rem;
+      }
+      &__list {
+        font-size: 2rem;
+      }
+    }
+  }
+}
