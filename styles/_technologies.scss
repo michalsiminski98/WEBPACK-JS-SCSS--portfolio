@@ -13,6 +13,11 @@
       margin: 48px 0;
       padding: 40px 0;
     }
+    &__buttonPurple {
+      display: none;
+      color: $mainColor;
+      margin: 0 80px;
+    }
     &__slide {
       width: 240px;
       height: 400px;
@@ -130,6 +135,9 @@
       &__slide {
         width: 360px;
         height: 600px;
+      }
+      &__buttonPurple {
+        display: block;
       }
       &__logo {
         width: 100%;

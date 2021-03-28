@@ -7,12 +7,12 @@ const writing = () => {
   if(i < text.length) {
   document.querySelector('.home__text').innerHTML += text[i];
   i++;
-setTimeout(writing, 80);
+setTimeout(writing, 40);
   } else {
       document.querySelector('.home__text').innerHTML += ' <span class="home__textDistinction"></span>';
       document.querySelector('.home__textDistinction').innerHTML += textSecond[j];
       j++;
-      let writingTimeout = setTimeout(writing, 80);
+      let writingTimeout = setTimeout(writing, 40);
       if(j === textSecond.length) clearTimeout(writingTimeout);
   }
 }
