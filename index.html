@@ -5,12 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/index.min.css">
   <script src="https://kit.fontawesome.com/92f3b6a3b9.js" crossorigin="anonymous"></script>
   <title>Michal Siminski</title>
+  <link rel="shortcut icon" href="favicon.ico" type="assets/x-icon">
 </head>
 <body class="bodyWrapper">
+  <div class="navigationMobile">
+    <span class="navigation__menuText navigationMobile__menuText">
+      Menu <i class="fas fa-caret-down navigation__menuButton navigationMobile__menuButton"></i>
+    </span>
+    <ul class="navigationMobile__wrapper">
+      <li class="navigationMobile__item"><a class="navigationMobile__link" href="#home">Home</a></li>
+      <li class="navigationMobile__item"><a class="navigationMobile__link" href="#aboutme">About me</a></li>
+      <li class="navigationMobile__item"><a class="navigationMobile__link" href="#technologies">Technologies</a></li>
+      <li class="navigationMobile__item"><a class="navigationMobile__link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
   <nav class="navigation">
     <span class="navigation__menuText">
       Menu <i class="fas fa-caret-down navigation__menuButton"></i>
@@ -122,9 +134,9 @@
     </h4>
     <div class="contact__wrapper">
       <ul class="contact__list">
-        <li class="contact__listItem"><i class="contact__icon fab fa-linkedin"></i>Linkedin</li>
-        <li class="contact__listItem"><i class="contact__icon fab fa-github-square"></i>Github</li>
-        <li class="contact__listItem"><i class="contact__icon fab fa-facebook-square"></i>Facebook</li>
+        <li class="contact__listItem"><a href="https://www.linkedin.com/in/micha%C5%82-simi%C5%84ski-7b3436173/"><i class="contact__icon fab fa-linkedin"></i>Linkedin</a></li>
+        <li class="contact__listItem"><a href="https://github.com/michalsiminski98"><i class="contact__icon fab fa-github-square"></i>Github</a></li>
+        <li class="contact__listItem"><a href="https://www.facebook.com/profile.php?id=100007984440287"><i class="contact__icon fab fa-facebook-square"></i>Facebook</a></li>
       </ul>
       <ul class="contact__secondList">
         <li class="contact__listItem">+48 608 583 581</li>
@@ -140,5 +152,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/writingText.js"></script>
+<script src="js/menuButton.js"></script>
 </body>
 </html>
