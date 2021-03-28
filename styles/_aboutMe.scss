@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-size: 100% 201px;
     margin: 8px 0;
+    opacity: 0;
   }
   &__photo-first {
     background-image: url(../assets/aboutmefirst.jpg);
@@ -164,5 +165,16 @@
       transform: translate(50%, -40%);
       background-image: url(../assets/aboutmethird.jpg);
     }
+  }
+}
+.aboutMe__photo-animation {
+  animation: show linear 1.5s forwards;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
