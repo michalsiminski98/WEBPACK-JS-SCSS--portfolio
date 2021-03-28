@@ -16,27 +16,26 @@
       Menu <i class="fas fa-caret-down navigation__menuButton"></i>
     </span>
     <ul class="navigation__wrapper">
-      <li class="navigation__item">Home</li>
-      <li class="navigation__item">About me</li>
-      <li class="navigation__item">Technologies</li>
-      <li class="navigation__item">Contact</li>
+      <li class="navigation__item"><a href="#home">Home</a></li>
+      <li class="navigation__item"><a href="#aboutme">About me</a></li>
+      <li class="navigation__item"><a href="#technologies">Technologies</a></li>
+      <li class="navigation__item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <section class="home">
+  <section class="home" id="home">
     <div class="home__textWrapper">
       <h1 class="home__text">
-        Hello I'm Michal Siminski
-        I'm <span class="home__textDistinction">Frontend Developer</span>
+        <!-- Hello I'm Michal Siminski I'm <span class="home__textDistinction">Frontend Developer</span> -->
       </h1>
-      <button class="home__button">
+      <a href="https://github.com/michalsiminski98"><button class="home__button">
         My projects
-      </button>
+      </button></a>
     </div>
     <div class="home__rectangle"></div>
     <div class="home__profilePicture"></div>
     <div class="home__wave"></div>
   </section>
-  <section class="aboutMe">
+  <section class="aboutMe" id="aboutme">
     <h3 class="aboutMe__sectionTitle"><b>#</b>About me</h3>
     <div class="aboutMe__wrapper">
       <div class="aboutMe__photo aboutMe__photo-first"></div>
@@ -53,8 +52,9 @@
       <div class="aboutMe__photo aboutMe__photo-second"></div>
       <div class="aboutMe__photo aboutMe__photo-third"></div>
     </div>
+    <div class="dots"></div>
   </section>
-  <section class="technologies">
+  <section class="technologies" id="technologies">
     <h3 class="technologies__sectionTitle"><b>#</b>Technologies</h3>
     <div class="swiper-container swiper__container">
       <div class="swiper-wrapper swiper__wrapper">
@@ -116,7 +116,30 @@
         </div>
       </div>
   </section>
+  <section class="contact" id="contact">
+    <h3 class="contact__sectionTitle"><b>#</b>Contact</h3>
+    <h4 class="contact__text">
+      Additional info you can find here:
+    </h4>
+    <div class="contact__wrapper">
+      <ul class="contact__list">
+        <li class="contact__listItem"><i class="contact__icon fab fa-linkedin"></i>Linkedin</li>
+        <li class="contact__listItem"><i class="contact__icon fab fa-github-square"></i>Github</li>
+        <li class="contact__listItem"><i class="contact__icon fab fa-facebook-square"></i>Facebook</li>
+      </ul>
+      <ul class="contact__secondList">
+        <li class="contact__listItem">+48 608 583 581</li>
+        <li class="contact__listItem">michal.siminski3@gmail.com</li>
+      </ul>
+    </div>
+    <div class="contact__footer">
+      <p class="contact__name">
+        Michał Simiński &copy;
+      </p>
+    </div>
+  </section>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
+<script src="js/writingText.js"></script>
 </body>
 </html>

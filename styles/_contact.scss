@@ -1,0 +1,111 @@
+.contact {
+  width: 100vw;
+  background-color: $secondaryBackground;
+  overflow: hidden;
+  &__sectionTitle {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: $mainColor;
+  }
+  &__text {
+    width: 60%;
+    margin-left: 40px;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 40px;
+    font-size: 1.3rem;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__listItem {
+    margin: 8px 0;
+  }
+  &__icon {
+    margin: 0 8px 0 0;
+    font-size: 2rem;
+    color: $mainColor;
+  }
+  &__secondList {
+    margin: 8px 0;
+    list-style-type: none;
+  }
+  &__footer {
+    position: relative;
+    width: 130vw;
+    height: 290px;
+    transform: translate(-5%, 20%) rotate(-10deg);
+    background-color: $mainColor;
+  }
+  &__name {
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    font-size: 1.6rem;
+    transform: translate(180%, 150%) rotate(10deg);
+    color: $fontColor;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    &__sectionTitle {
+      margin: 24px 40px;
+      text-align: left;
+      font-size: 2.5rem;
+    }
+    &__wrapper {
+      flex-direction: row;
+    }
+    &__list {
+      flex-basis: 50%;
+    }
+    &__footer {
+      width: 130vw;
+      height: 67px;
+      transform: translate(-5%, 50%) rotate(-4deg);
+    }
+    &__name {
+      font-size: 1.6rem;
+      transform: translate(455%, 50%) rotate(4deg);
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    &__wrapper {
+      font-size: 1.7rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+    &__footer {
+      height: 92px;
+    }
+    &__name {
+      transform: translate(600%, 40%) rotate(4deg);
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .contact {
+    &__name {
+      transform: translate(900%, 50%) rotate(4deg);
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .contact {
+    &__footer {
+      height: 160px;
+    }
+    &__name {
+      transform: translate(1300%, 150%) rotate(4deg);
+    }
+  }
+}

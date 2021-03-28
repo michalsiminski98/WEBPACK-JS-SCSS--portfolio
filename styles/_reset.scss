@@ -3,6 +3,10 @@
   margin: 0;
   color: $fontColorBlack;
   font-family: "Open Sans";
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
 }
 b {
   color: $mainColor;
