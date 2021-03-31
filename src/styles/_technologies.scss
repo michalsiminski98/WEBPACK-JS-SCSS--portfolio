@@ -72,34 +72,34 @@
       background-repeat: no-repeat;
     }
     &__htmlLogo {
-      background-image: url(../assets/html.png);
+      background-image: url(./assets/html.png);
     }
     &__htmlLogo {
-      background-image: url(../assets/html.png);
+      background-image: url(./assets/html.png);
     }
     &__cssLogo {
-      background-image: url(../assets/css.png);
+      background-image: url(./assets/css.png);
       transform: translateX(-40%);
     }
     &__javascriptLogo {
-      background-image: url(../assets/javascript.png);
+      background-image: url(./assets/javascript.png);
     }
     &__reactLogo {
-      background-image: url(../assets/react.png);
+      background-image: url(./assets/react.png);
       transform: translate(-50%, 20%);
     }
     &__webpackLogo {
-      background-image: url(../assets/webpack.png);
+      background-image: url(./assets/webpack.png);
     }
     &__gitLogo {
-      background-image: url(../assets/git.png);
+      background-image: url(./assets/git.png);
     }
     &__gsapLogo {
-      background-image: url(../assets/gsap.png);
+      background-image: url(./assets/gsap.png);
       transform: translateX(-60%);
     }
     &__pythonLogo {
-      background-image: url(../assets/python.png);
+      background-image: url(./assets/python.png);
     }
     &__name {
       margin: 8px 16px;
@@ -152,7 +152,7 @@
         transform: translateX(-21%);
       }
       &__reactLogo {
-        background-image: url(../assets/react.png);
+        background-image: url(./assets/react.png);
         transform: translate(-40%, 5%);
       }
       &__name {
