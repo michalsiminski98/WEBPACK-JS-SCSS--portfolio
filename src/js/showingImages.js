@@ -1,5 +1,5 @@
+export const showingImages = () => {
 const images = document.querySelectorAll('.aboutMe__photo');
-
 
 const showImages = () => {
   if (window.scrollY > 300) {
@@ -13,5 +13,5 @@ const showImages = () => {
   }
 }
 
-
 window.addEventListener('scroll', showImages);
+}

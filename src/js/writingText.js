@@ -1,3 +1,4 @@
+export const writingText = () => {
 let text = "Hello I'm Michal Siminski I'm";
 let textSecond = "Frontend Developer";
 let i = 0; 
@@ -17,3 +18,4 @@ setTimeout(writing, 40);
   }
 }
 writing();
+}

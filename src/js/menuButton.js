@@ -1,3 +1,4 @@
+export const menuButton = () => {
 const menuButtonOff = document.querySelector('.navigation__menuTextOff');
 const menuButtonOn = document.querySelector('.navigation__menuTextOn');
 const navigationMobile = document.querySelector('.navigationMobile');
@@ -32,3 +33,4 @@ menuButtonOn.addEventListener('click', secondClick);
 ulItem.forEach(element => {
   element.addEventListener('click', secondClick);
 });
+}

@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-michal-siminski",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config config/webpack.config.js",
+    "dev": "webpack --config config/webpack.config.js",
+    "prod": "webpack --config config/webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalsiminski98/WEBPACK-JS-SCSS--portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalsiminski98/WEBPACK-JS-SCSS--portfolio/issues"
+  },
+  "homepage": "https://github.com/michalsiminski98/WEBPACK-JS-SCSS--portfolio#readme",
+  "dependencies": {
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.1.0",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

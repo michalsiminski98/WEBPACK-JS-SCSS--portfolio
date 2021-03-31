@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,AAAC,CAChB,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,CAAC,CACR,IAAI,CAAE,GAAG,CACV",
-    "sources": [
-        "../styles/navigationMobile.scss"
-    ],
-    "names": [],
-    "file": "navigationMobile.min.css"
-}

@@ -1,3 +1,4 @@
+export const swiper = () => {
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
@@ -19,3 +20,4 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   }
 });
+}
