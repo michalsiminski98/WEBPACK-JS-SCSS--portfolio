@@ -27,7 +27,7 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options:{
-            name: 'css/[name].[ext]',
+            name: '[name].[ext]',
             outputPath: 'images',
           }
           },
